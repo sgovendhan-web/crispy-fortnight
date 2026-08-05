@@ -1,7 +1,8 @@
 name: sampleworkflow
 on: push
-  say-hello:
+jobs:
+ say-hello:
    runs-on: ubuntu-latest
    steps:
-     -name: print a message
-      run: echo This is Govend
+      - name: print a message
+       run: echo This is Govend
